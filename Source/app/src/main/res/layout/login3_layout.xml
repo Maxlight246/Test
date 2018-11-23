@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud3"
+    android:orientation="vertical"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/db_login3"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CUSTOMER LOGIN"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/db_text"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="20dp"
+            android:hint="Email ID"
+            android:textSize="15sp"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+           />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:drawablePadding="20dp"
+            android:hint="Password"
+            android:textSize="15sp"
+            android:textColorHint="#ffffff"
+            android:backgroundTint="#ffffff"
+            />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Remember me"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:buttonTint="#6c000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forgot Password?"
+                android:textSize="10sp"
+                android:textColor="#ffffff"
+                android:textStyle="italic"
+                android:gravity="right"
+                android:layout_marginRight="20dp"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            android:background="@drawable/db_btlogin"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

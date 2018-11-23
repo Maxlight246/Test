@@ -9,15 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Table" />
+        <activity android:name=".QuanLyTaiLieu.TaiLieuActivity" />
+        <activity android:name=".QuanLyTaiLieu.SachActivity" />
+        <activity android:name=".setting.SettingActivity" />
+        <activity android:name=".test.TestActivity" />
+        <activity android:name=".CorfirmActivity"></activity>
+        <activity android:name=".listview.ListViewDemo">
+
+        </activity>
+        <activity android:name=".Danhsachsinhvien.Danhsach">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+    </activity>
     </application>
 
 </manifest>
