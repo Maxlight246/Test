@@ -13,7 +13,7 @@ import com.example.admin.test.R;
 
 import java.util.ArrayList;
 
-public class Danhsach extends AppCompatActivity {
+public class DanhsachActivity extends AppCompatActivity {
 
     ListView lvSinhVien;
     EditText edTen,edTuoi, edDiachi;
@@ -38,12 +38,12 @@ public class Danhsach extends AppCompatActivity {
             public void onClick(View v) {
 
                 if (edTen.getText().toString().isEmpty()||edTuoi.getText().toString().isEmpty()||edDiachi.getText().toString().isEmpty()){
-                    Toast.makeText(Danhsach.this, "moi ban nhap du thong tin", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DanhsachActivity.this, "moi ban nhap du thong tin", Toast.LENGTH_SHORT).show();
                 }else {
                     sinhvienArrayList.add(new Sinhvien(edTen.getText().toString(),
                         edDiachi.getText().toString(),
                         Integer.parseInt(edTuoi.getText().toString())));
-                Toast.makeText(Danhsach.this, "them thanh cong", Toast.LENGTH_SHORT).show();
+                Toast.makeText(DanhsachActivity.this, "them thanh cong", Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
                 }
             }
@@ -64,11 +64,16 @@ public class Danhsach extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Sinhvien sinhviennew = sinhvienArrayList.get(vitri);
-                sinhviennew.setTen(edTen.getText().toString());
-                sinhviennew.setTuoi(Integer.parseInt(edTuoi.getText().toString()));
-                sinhviennew.setDiachi(edDiachi.getText().toString());
-                Toast.makeText(Danhsach.this, "cap nhat thanh cong", Toast.LENGTH_SHORT).show();
-                adapter.notifyDataSetChanged();
+                if (edTen.getText().toString().isEmpty()||edTuoi.getText().toString().isEmpty()||edDiachi.getText().toString().isEmpty()){
+                    Toast.makeText(DanhsachActivity.this, "hay nhap du du lieu", Toast.LENGTH_SHORT).show();
+                }else {
+                    sinhviennew.setTen(edTen.getText().toString());
+                    sinhviennew.setTuoi(Integer.parseInt(edTuoi.getText().toString()));
+                    sinhviennew.setDiachi(edDiachi.getText().toString());
+                    Toast.makeText(DanhsachActivity.this, "cap nhat thanh cong", Toast.LENGTH_SHORT).show();
+                    adapter.notifyDataSetChanged();
+                }
+//
             }
         });
 

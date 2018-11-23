@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Danhsachsinhvien.Danhsach">
+    tools:context=".Danhsachsinhvien.DanhsachActivity">
     <EditText
         android:id="@+id/ed_ten"
         android:layout_width="match_parent"
