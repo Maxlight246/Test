@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.admin.test">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,16 +20,34 @@
         <activity android:name=".QuanLyTaiLieu.SachActivity" />
         <activity android:name=".setting.SettingActivity" />
         <activity android:name=".test.TestActivity" />
-        <activity android:name=".CorfirmActivity"></activity>
-        <activity android:name=".listview.ListViewDemo">
+        <activity android:name=".CorfirmActivity" />
+        <activity android:name=".listview.ListViewDemo" />
+        <activity android:name=".Danhsachsinhvien.DanhsachActivity">
 
         </activity>
-        <activity android:name=".Danhsachsinhvien.DanhsachActivity">
+        <activity android:name=".recyclerView.mainActivity" />
+        <activity android:name=".recyclerView.Main2Activity" />
+        <activity android:name=".recyclerView.ChatScreen.ChatActivity" />
+        <activity android:name=".test2.Main3Activity" />
+        <activity android:name=".recyclerView.contact.GoProContactActivity" />
+        <activity android:name=".recyclerView.contact.AddActivity" />
+        <activity android:name=".SharePrefenences.LoginActivity">
+
+        </activity>
+        <activity android:name=".SharePrefenences.LogoutActivity" />
+        <activity android:name=".json.JsonDemoActivity">
+
+        </activity>
+        <activity android:name=".json.DetailProductActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-    </activity>
+        </activity>
+        <activity android:name=".test3.Main4Activity">
+
+        </activity>
     </application>
 
 </manifest>

@@ -34,13 +34,13 @@ public class Android003Adapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
-        if (convertView==null){
-            convertView = LayoutInflater.from(context).inflate(R.layout.item_listview_layout,parent,false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_listview_layout, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.tvPrefix = convertView.findViewById(R.id.tv_prefix);
-            viewHolder.tvName= convertView.findViewById(R.id.tv_name);
+            viewHolder.tvName = convertView.findViewById(R.id.tv_name);
             convertView.setTag(viewHolder);
-        }else {
+        } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
@@ -57,9 +57,10 @@ public class Android003Adapter extends BaseAdapter {
         return convertView;
     }
 
-    class ViewHolder{
+    class ViewHolder {
         TextView tvPrefix;
         TextView tvName;
+
         public ViewHolder() {
 
         }

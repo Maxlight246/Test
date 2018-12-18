@@ -3,11 +3,21 @@ package com.example.admin.test.Danhsachsinhvien;
 public class Sinhvien {
     public String ten,diachi;
     public int tuoi;
+    public int id;
 
     public Sinhvien(String ten, String diachi, int tuoi) {
         this.ten = ten;
         this.diachi = diachi;
         this.tuoi = tuoi;
+        this.id=id;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTen() {

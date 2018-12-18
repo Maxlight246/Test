@@ -14,7 +14,7 @@ import java.util.List;
 public class SinhvienAdapter extends BaseAdapter {
 
     Context context;
-            // de truyen layout vao listview
+    // de truyen layout vao listview
     List<Sinhvien> arrSinhvien;      // tao list kieu sinh vien
 
 
@@ -36,15 +36,15 @@ public class SinhvienAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
-        if (convertView==null){
-            convertView=LayoutInflater.from(context).inflate(R.layout.item_dssv_layout,parent,false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(context).inflate(R.layout.item_dssv_layout, parent, false);
             viewHolder = new ViewHolder();
-            viewHolder.tvTen=convertView.findViewById(R.id.tv_ten);
-            viewHolder.tvTuoi=convertView.findViewById(R.id.tv_tuoi);
-            viewHolder.tvDiachi=convertView.findViewById(R.id.tv_diachi);
-            viewHolder.tvStt=convertView.findViewById(R.id.tv_stt);
+            viewHolder.tvTen = convertView.findViewById(R.id.tv_ten);
+            viewHolder.tvTuoi = convertView.findViewById(R.id.tv_tuoi);
+            viewHolder.tvDiachi = convertView.findViewById(R.id.tv_diachi);
+            viewHolder.tvStt = convertView.findViewById(R.id.tv_stt);
             convertView.setTag(viewHolder);
-        }else {
+        } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         // hien thi noi dung vao view
@@ -55,12 +55,14 @@ public class SinhvienAdapter extends BaseAdapter {
         viewHolder.tvStt.setText(Integer.toString(position));
         return convertView;
     }
-    class ViewHolder{
+
+    class ViewHolder {
         TextView tvTen;
         TextView tvTuoi;
         TextView tvDiachi;
         TextView tvStt;
-        public ViewHolder(){
+
+        public ViewHolder() {
 
         }
     }
