@@ -22,32 +22,30 @@
         <activity android:name=".test.TestActivity" />
         <activity android:name=".CorfirmActivity" />
         <activity android:name=".listview.ListViewDemo" />
-        <activity android:name=".Danhsachsinhvien.DanhsachActivity">
-
-        </activity>
+        <activity android:name=".Danhsachsinhvien.DanhsachActivity" />
         <activity android:name=".recyclerView.mainActivity" />
         <activity android:name=".recyclerView.Main2Activity" />
         <activity android:name=".recyclerView.ChatScreen.ChatActivity" />
         <activity android:name=".test2.Main3Activity" />
         <activity android:name=".recyclerView.contact.GoProContactActivity" />
         <activity android:name=".recyclerView.contact.AddActivity" />
-        <activity android:name=".SharePrefenences.LoginActivity">
-
-        </activity>
+        <activity android:name=".SharePrefenences.LoginActivity" />
         <activity android:name=".SharePrefenences.LogoutActivity" />
-        <activity android:name=".json.JsonDemoActivity">
-
-        </activity>
-        <activity android:name=".json.DetailProductActivity">
+        <activity android:name=".json.JsonDemoActivity" />
+        <activity android:name=".json.DetailProductActivity" />
+        <activity android:name=".test3.Main4Activity" />
+        <activity android:name=".network.LoginwithnetworkActivity" />
+        <activity android:name=".network.ListProduct.ListProductActivity" />
+        <activity android:name=".testkt.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".test3.Main4Activity">
-
-        </activity>
+        <activity android:name=".testkt.DangkyActivity" />
+        <activity android:name=".testkt.ListActivity" />
+        <activity android:name=".testkt.DetailActivity"></activity>
     </application>
 
 </manifest>
